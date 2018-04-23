@@ -1,0 +1,156 @@
+body {
+	margin: 0px;
+	background: #5ca4a9;
+}
+
+a { text-decoration: none; color: #4f4d43;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.navbar {
+	width: 100%;
+	height: 200px;
+	background: #efe8ca;
+	display: flex;
+	flex-direction: row;
+	position: relative;	
+}
+
+.page-title {
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 72px; 
+	bottom: 0px;
+	left: 100px;
+	color: #4f4d43;
+}
+
+.navbar-items {
+	position: absolute;
+	bottom: 13px;
+	right: 100px;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #4f4d43;
+}
+
+.navitem {
+	margin-left: 80px;
+	display: inline-flex;
+}
+
+.navitem:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-color: #fe5f55;
+}
+
+
+.heart {
+	position: absolute;
+	bottom: 13px;
+	right: 502px;
+	height: 18px;
+	width: 18px;
+	margin-right: 10px;
+}
+
+
+.text-items {
+	position: absolute;
+	left: 100px;
+	margin-top: 13px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	color: #f6ddc6;
+}
+
+#toby {
+	width: 425px;
+	height: auto;
+	position: absolute;
+	left: 30%;
+	top: 45%;
+	transition: 0.75s;
+}
+
+#toby:hover {
+	cursor: pointer;
+	transform: rotate(-30deg);
+}
+
+#rocks {
+	width: 328px;
+	height: auto;
+	position: absolute;
+	bottom: 0px;
+	right: 50px;
+	transition: 0.75s;
+}
+
+#grass {
+	width: 700px;
+	height: auto;
+	position: absolute;
+	left: 50px;
+	bottom: 0px;
+	transition: 0.75s;
+}
+
+#bubbles {
+	position: absolute;
+	display: inline-flex;
+	right: 335px;
+	bottom: 120px;
+}
+
+#bubble1 {
+	width: 17px;
+}
+
+#bubble2 {
+	width: 31px;
+	transform: translate(15px, -5px);
+}
+
+#bubble3 {
+	width: 65px;
+	transform: translate(20px, -50px);
+}
+
+#bubble4 {
+	width: 68px;
+	transform: translate(20px, -120px);
+}
+
+#bubble5 {
+	width: 77px;
+	transform: translate(-10px, -160px);
+}
+
+@media (min-width: 1024px) and (max-width: 1266px){
+	#toby {
+		width: 300px;
+		top: 55%;
+		left: 35%;
+	}
+
+	#grass {
+		width: 500px;
+	}
+
+	#rocks {
+		width: 228px;
+	}
+
+	#bubbles {
+		left: 60%;
+		bottom: 25%;
+	}
+}

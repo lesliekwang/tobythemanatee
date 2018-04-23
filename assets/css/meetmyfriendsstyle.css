@@ -1,0 +1,141 @@
+body {
+	margin: 0px;
+	background: #f49d6e;
+}
+
+a { text-decoration: none; color: #4f4d43;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.navbar {
+	width: 100%;
+	height: 200px;
+	background: #f49d6e;
+	display: flex;
+	flex-direction: row;
+	position: relative;	
+}
+
+.page-title {
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 72px; 
+	bottom: 0px;
+	left: 100px;
+	color: #4f4d43;
+}
+
+.navbar-items {
+	position: absolute;
+	bottom: 13px;
+	right: 100px;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #4f4d43;
+}
+
+.navitem {
+	margin-left: 80px;
+	display: inline-flex;
+}
+
+.navitem:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-decoration-color: #fe5f55;
+}
+
+.heart {
+	position: absolute;
+	bottom: 13px;
+	right: 228px;
+	height: 18px;
+	width: 18px;
+	margin-right: 10px;
+}
+
+.frentxt {
+	width: 550px;
+	position: absolute;
+	margin-top: 13px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+	color: #4f4d43;
+	left: 100px;
+}
+
+.photos {
+	position: absolute;
+	left: 200px;
+	top: 210px;
+	display: inline-flex;
+}
+
+.polaroid {
+	width: 436px;
+	height: 556px;
+	background: #efe8ca;
+	box-shadow: 9px 12px 20px rgba(0, 0, 0, 0.3);
+	margin-top: 84px;
+	margin-right: 84px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: 0.2s;
+}
+
+.polaroid:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+	box-shadow: 9px 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.polaroid:active {
+	transform: scale(1);
+}
+
+#col1 {
+	margin-top: 130px;
+	margin-bottom: 100px;
+}
+
+.friendpic {
+	width: 370px;
+	padding-top: 32px;
+}
+
+.polaroid-text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	color: #4f4d43;
+	margin-top: 45px;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+	.navbar-items {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1266px) {
+	.photos {
+		flex-direction: column;
+		left: 32%;
+	}
+
+	#col1 {
+		margin-bottom: 0px;
+	}
+
+	#col2 {
+		margin-bottom: 100px;
+	}
+	
+}
