@@ -98,6 +98,7 @@ a:hover, a:active { text-decoration: none; }
 
 .polaroid:active {
 	transform: scale(1);
+	box-shadow: 9px 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 #col1 {
